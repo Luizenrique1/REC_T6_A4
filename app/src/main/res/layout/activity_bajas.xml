@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="98dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/txt_buscarC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btn_searchC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:text="@string/txt_btn_consultas" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="40dp"
+        android:text="@string/txt_lbl_num_control" />
+
+    <EditText
+        android:id="@+id/txt_IdProdutoBajas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView3_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:text="@string/txt_lbl_nombre" />
+
+    <EditText
+        android:id="@+id/txt_nombreB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView4_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:text="@string/txt_lbl_primer_ap" />
+
+    <Spinner
+        android:id="@+id/spinnerTipo"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:entries="@array/Tipo_de_Producto"
+        android:saveEnabled="false" />
+
+    <TextView
+        android:id="@+id/textView5_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="40dp"
+        android:text="@string/txt_lbl_segundo_ap" />
+
+    <EditText
+        android:id="@+id/txt_cantidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textView6_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="40dp"
+        android:text="@string/txt_lbl_edad" />
+
+    <EditText
+        android:id="@+id/txt_Precio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/btn_eliminarB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="40dp"
+        android:onClick="OnClick"
+        android:text="@string/txt_btn_bajas" />
+
+    <Button
+        android:id="@+id/btn_cancelarB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"
+        android:text="@string/txt_btn_cancelar" />
+</LinearLayout>
